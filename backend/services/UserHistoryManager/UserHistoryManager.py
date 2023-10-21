@@ -21,7 +21,7 @@ sys.path.append('../')
 userHistoryManagerBlueprint = Blueprint('userHistoryManagerBlueprint', __name__)
 
 
-@userHistoryManagerBlueprint.route('/api/userhistorymanagerhealth')
+@userHistoryManagerBlueprint.route('/api/health')
 def filemanagerhealth():
     print(current_app.config)
     return jsonify({'health':'good'}) 

@@ -19,7 +19,7 @@ sys.path.append('../')
 
 documentVersionManagerBlueprint = Blueprint('documentVersionManagerBlueprint', __name__)
 
-@documentVersionManagerBlueprint.route('/api/documentversionmanagerhealth')
+@documentVersionManagerBlueprint.route('/api/health')
 def filemanagerhealth():
     print(current_app.config)
     return jsonify({'health':'good'}) 

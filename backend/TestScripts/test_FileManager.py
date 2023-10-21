@@ -7,7 +7,7 @@ headers = {"authToken":'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6InRlc3R
 # Test /file/creat - for upload
 # -----------------------------
 
-req = requests.post('http://127.0.0.1:5000/api/filecreate',
+req = requests.post('http://127.0.0.1:5000/fileMngr/api/filecreate',
             json={"DocId":"0", "DocName":"test.tex","IsUpload":False,"DocText":"r\andom\data","RefDocId":"0"},
             headers=headers)
 
